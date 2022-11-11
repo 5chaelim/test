@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="비디오전체">
+        <div class="비디오">
+            <!-- <video id="videoTag" controls autoplay muted > --> <!-- autoplay muted-자동재생 코드(muted 필수) -->
+                <!-- <source src="https://s3550.smartucc.kr/encodeFile/3550/2022/08/29/42d17eb21f78924c3db7e305a266062c_W.mp4" type="video/mp4">
+            </video> -->
+            <video controls autoplay muted
+            src="https://s3550.smartucc.kr/encodeFile/3550/2022/08/29/42d17eb21f78924c3db7e305a266062c_W.mp4"></video>
+        </div>
+    </div>
+    <div class="main">
+        <!-- data-aos-delay="200" 위에 효과 뜨는시간 조절 -->
+        <div class="dir a1">
+            <div 
+            data-aos="zoom-in" 
+            data-aos-delay="200"
+            class="all a11">자식1</div>
+            <div 
+            data-aos="zoom-in" 
+            data-aos-delay="400"
+            class="all a12">자식2</div>
+            <div class="dir"></div>
+        </div> <!-- a1 end -->
+        <div class="a2">
+            <div
+            data-aos="fade-right" 
+            data-aos-delay="600" 
+            class="둘째손 a21">둘째자식1</div>
+            <div 
+            data-aos="fade-up" 
+            data-aos-delay="800"
+            class="둘째손 a22">둘째자식2</div>
+            <div 
+            data-aos="fade-left" 
+            data-aos-delay="1000"
+            class="둘째손 a23">둘째자식3</div>
+            <div class="막내"></div>
+        </div><!-- a2 end -->
+        <div class="a3">
+            <div class="a31">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RccDIpx4ZMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div><!-- a3 end -->
+        <div class="a4 dir">
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="200"
+            class="넷째손 a41"> 넷째자식1</div>
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="400"
+            class="넷째손 a42"> 넷째자식2</div>
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="600"
+            class="넷째손 a43"> 넷째자식3</div>
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="800"
+            class="넷째손 a44"> 넷째자식4</div>
+        </div><!-- a4 end -->
+    </div><!-- main end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

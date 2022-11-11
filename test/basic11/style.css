@@ -1,0 +1,130 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+img{margin: auto; width: 100%;}
+.clear:after{content: ""; clear: both; display: block;}
+body{background-color: rgb(0, 0, 0);}
+.main{background-color: rgb(94, 94, 94); width: 1000px;
+    margin: auto; padding-top: 50px;
+}
+.main .a1{color: aliceblue;
+    position: relative; 
+}
+.main .a1 .icon{
+    position: absolute; left: 50px; top: 10px;
+    z-index: 100;
+}
+.main .a1 .제목{
+    position: absolute; left: 50%; top: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px; /* 패딩 모서리에 곡선 */
+}
+.slickwrap{height: 445px; overflow: hidden;} 
+.slickwrap .slick-prev{
+    position: absolute; left: 0;top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    visibility: hidden;
+    font-size: 0;
+}
+.slickwrap .slick-prev:after{
+    content: "\f053";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: #000;
+    text-shadow: 0 0 10px black;
+}
+
+.slickwrap .slick-next{
+    position: absolute ; right: 0%; top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    font-size: 0;
+}
+.slickwrap .slick-next:after{
+    content: "\f054";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0 0 10px black;
+}
+.main .a2{background-color: #D9F8C4;
+    padding: 10px;
+}
+.main .a2 .둘째자손{width: 23.5%; height: 300px;
+    float: left;
+    margin-right: 2%;
+}
+.main .a2 .둘째자식1{background-color: #B2A4FF;}
+.main .a2 .둘째자식2{background-color: #FFB4B4;}
+.main .a2 .둘째자식3{background-color: #FFDEB4;}
+.main .a2 .둘째자식4{background-color: #FFF9CA;
+    margin-right: 0%;
+}
+.main .a2 .둘째자식4 .slick-track{height: 300px;}
+.main .a2 .둘째자식4 .slick-dots{
+    position: absolute;
+    left: 50%; bottom: 0; transform: translateX(-50%);
+    text-align: center;
+}
+.main .a2 .둘째자식4 .slick-dots li{
+    display: inline; margin: 5px;
+}
+.main .a3{background-color: #abdf9e; padding: 20px;}
+.main .a3 .셋째영역{ background-color: #d3c2dd; 
+    padding: 20px; width: 900px;
+    box-sizing: border-box; /* 패딩, 선을 wigth사이즈로 포함시킴 */
+    margin: auto;
+    /* border: 두께 스타일 컬러; */
+    border: 2px solid purple;
+}
+.main .a3 .셋째자손{float:left; height: 200px; width: 32%;
+    margin-right: 2%; text-align: center; /* 텍스트를 가운대로 블럭요소만 적용 */
+    line-height: 200px; /* 적은 블럭안의 인라인요소한테 적용됨 */
+}
+.main .a3 .셋째자식1{background-color: #BCA3CA;}
+.main .a3 .셋째자식2{background-color: #7C4789;}
+.main .a3 .셋째자식3{background-color: #4A0E5C;
+    margin-right: 0;
+}
+.main .a4{background-color: #ce628b; width: 900px; margin: auto;
+    margin-top: 30px; padding: 20px;
+    box-sizing: border-box;
+}
+.main .a4 .넷째자손{float: left; width: 23.5%; height: 200px; margin-right: 2%;
+
+}
+.main .a4 .넷째자식1{background-color: #D77FA1;}
+.main .a4 .넷째자식2{background-color: #E6B2C6;}
+.main .a4 .넷째자식3{background-color: #FEF6FB;}
+.main .a4 .넷째자식4{background-color: #D6E5FA; margin-right: 0;}
+
+.main .a5{background-color: #6F4F8B; width: 900px;  
+    box-sizing: border-box; margin: auto; margin-top: 30px;
+padding: 20px;}
+.main .a5 .다자손{float: left; width: 45%; height: 200px; margin-right: 10%;
+    text-align: center; line-height: 200px;
+}
+.main .a5 .다자식1{background-color: #6D739D;}
+.main .a5 .다자식2{background-color: #7DBCC8; margin-right: 0;}
+
+.main .a6{background-color: #153462; width: 900px; 
+    margin: auto; margin-top: 30px;}
+.main .a6 .여섯손{background-color: #F6F6C9;
+    width: 18.4%; height: 200px;  
+    float: left; margin-right: 2%;
+}
+.main .a6 .여섯자식1{}
+.main .a6 .여섯자식2{}
+.main .a6 .여섯자식3{}
+.main .a6 .여섯자식4{}
+.main .a6 .여섯자식5{ margin-right: 0;}

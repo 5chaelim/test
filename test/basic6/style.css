@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+.dir::after{content:"" ; clear: both; display: block;}
+
+/* 비디오 */
+.비디오전체{width: 80%; margin: auto;}
+.비디오전체 video{width: 100%; margin: auto;} /* 태그는 이름앞에 . 안찍음 */
+
+.main{background-color: #937DC2;
+    width: 80%; margin: auto;
+    padding: 2%;
+    padding-top: 5%; /* 밑에 적는게 힘이 쎄다 */
+    box-sizing: border-box;
+}
+.main .a1{background-color: #C689C6; margin-top: 30px;}
+.main .a1 .all{float: left;;height: 200px; width: 49%;}
+.main .a1 .a11{background-color: #FFABE1;
+    margin-right: 2%;
+}
+.main .a1 .a12{background-color: #000000; color: #DFF6FF;}
+
+.main .a2{background-color: #5C2E7E; margin-top: 30px;}
+.main .a2 .둘째손{ float: left; height: 200px; width: 33.3333%;}
+/* .main .a2 .둘째손.a21{background-color: #4C6793;} */
+/* 이름이 둘다 포함이면 띄어쓰기 안함 */
+.main .a2 .a21{background-color: #4C6793;}
+.main .a2 .a22{background-color: #8BBCCC;}
+.main .a2 .a23{background-color: #DFF6FF;}
+.main .a2 .막내{clear: both;}
+
+.main .a3{background-color: rgb(87, 15, 155) ; margin-top: 30px;
+}
+.main .a3 iframe{width: 100%;}
+/* font-size: 40px; text-align: center; line-height: 200px; */
+.main .a4{background-color: rgb(232, 233, 202); margin-top: 30px;}
+.main .a4 .넷째손{width: 23.75%; height: 200px;
+    float: left; 
+}
+.main .a4 .a41{background-color: #495C83;
+    margin: 1% 0.5% 1% 1%;
+}
+.main .a4 .a42{background-color: #7A86B6;
+    margin: 1% 0.5% 1% 0.5%;
+}
+.main .a4 .a43{background-color: #A8A4CE;
+    margin: 1% 0.5% 1% 0.5%;
+}
+.main .a4 .a44{background-color: #C8B6E2;
+    margin: 1% 1% 1% 0.5%;
+}

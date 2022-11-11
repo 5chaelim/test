@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.main{background-color: #1A374D;
+    width: 600px;
+    margin-top: 200px;
+    position: relative;
+}
+.main .a1{background-color: #406882;
+    width: 200px; height: 200px;
+    /* 이동하려면 포지션이 있어야함 */
+    position: relative; /* 주위에 아무런 영향을 주지않음 */
+    left: 300px;
+}
+.main .a2{background-color: #6998AB;
+    width: 200px; height: 200px;
+    position: absolute ; left: 100px; top: 0; /* position: absolute 2층에 떠있는상태 */
+}
+.main .a3{background-color: #B1D0E0;
+    width: 200px; height: 200px;
+}
+.fixed{background-color: #B1D0E0; color: #1A374D;
+    position: fixed; /* 화면기준 늘이던 줄이던 같은 위치에 있음*/
+    top: 100px; right: 10px;
+    padding: 20px;
+}

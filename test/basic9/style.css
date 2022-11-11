@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* font-family: 'Do Hyeon', sans-serif; */
+/* font-family: 'Nanum Brush Script', cursive; 
+font-family: 'Nanum Pen Script', cursive;*/
+*{margin: 0; padding: 0;}
+
+.치매약:after{content: ""; clear: both; display: block;}
+
+.main{background-color: #FF74B1;
+    width: 80%; margin: auto; padding: 20px;
+}
+/* --------------------a1----------------------- */
+.main .a1{background-color: #ff91da;
+    padding: 20px;
+}
+.main .a1 .첫자손{float: left; width: 23.5%;
+    margin-right: 2%;}
+/* --------------------a11----------------------- */
+.main .a1 .첫자손.a11{background-color: #FFA1CF; 
+    font-family: 'Do Hyeon', sans-serif;
+    position: relative;
+    overflow: hidden; /* 내영역보다 넘치는건 안보이게함 */
+}
+.main .a1 .첫자손.a11 .하{position: relative;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996505_727.jpg);
+    height: 200px;
+    background-size: cover; /* 사진 사이즈 비율에 맞게 바뀜 */
+    background-position: center;
+}
+
+.main .a1 .첫자손.a11 .하 h4{
+    position: absolute;
+    left: 50%; top: 50%;
+    background-color: rgb(254, 221, 255);
+    color: #FF74B1; padding: 3px 5px;
+    transform: translate(-50%, -50%);
+}
+.main .a1 .첫자손.a11 .상{
+    position: absolute; 
+    left: 0;top: 0; width: 100%; height: 100%;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996496_727.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    transform: translateX(100%);
+}
+.main .a1 .첫자손.a11:hover .상{
+    transform: translateX(0%);
+}
+.main .a1 .첫자손.a11 .상 h4{
+    position: absolute; 
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    background-color: #A7FFE4;
+    color: #FF74B1; padding: 3px 5px;
+}
+/* --------------------a11 end----------------------- */
+
+/* --------------------a12----------------------- */
+.main .a1 .첫자손.a12{background-color: #FFD6EC;
+    font-family: 'Do Hyeon', sans-serif;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.main .a1 .첫자손.a12 .상하{
+    position: absolute;
+    left: 0;top: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.main .a1 .첫자손.a12 .상하 h4{position: absolute; left: 50%;top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222; color: #FFA1CF; padding: 3px 5px;
+}
+.main .a1 .첫자손.a12 .상{background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996497_727.jpg);
+    z-index: 2; /* z-index 큰숫자가 위로 올라감 레이어를 올리는 것과 동일(position이 있어야 적용됨) */
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+.main .a1 .첫자손.a12:hover .상{
+    transform: translateY(-0%);
+    
+}
+.main .a1 .첫자손.a12 .하{background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996496_727.jpg);
+    z-index: 1;
+}
+/* --------------------a12 end----------------------- */
+
+/* --------------------a13----------------------- */
+.main .a1 .첫자손.a13{background-color: #A7FFE4;
+    font-family: 'Do Hyeon', sans-serif;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.main .a1 .첫자손.a13 .상하{position: absolute; 
+    left: 0; top: 0%; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.main .a1 .첫자손.a13 .상하 h4{
+   position: absolute;
+   left: 50%; top: 50%; transform: translate(-50%,-50%); 
+   background-color: #fff; color: #FF74B1;
+   padding: 3px 5px;
+}
+.main .a1 .첫자손.a13 .상{background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996502_727.jpg);
+    z-index: 2;
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 50%; /* 50%는 원이됨 */
+}
+.main .a1 .첫자손.a13:hover .상{
+    transform: scale(0.9);
+    opacity: 1;
+}
+.main .a1 .첫자손.a13 .하{background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996500_727.jpg);
+    z-index: 1;
+}
+
+
+/* --------------------a13 end----------------------- */
+
+/* --------------------a14----------------------- */
+.main .a1 .첫자손.a14{background-color: #cffcee; 
+    font-family: 'Do Hyeon', sans-serif;
+    margin: 0; position: relative; height: 200px;
+    overflow: hidden;
+}
+.main .a1 .첫자손.a14 .video{
+    position: absolute; width: 100%; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
+}
+.main .a1 .첫자손.a14 .video video{width: 100%;}
+.main .a1 .첫자손.a14 h4{
+    position: absolute; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, 77px);
+    color: #b30623;
+}
+/* .main .a1 .첫자손.a14:hover .video{} */
+.main .a1 .첫자손.a14 h4{
+    animation: mymove 10s both
+}
+@keyframes mymove {
+    0% {transform: translate(-338%, 77px);}
+    100% {transform: translate(338%, 77px);}
+  }
+/* --------------------a14 end----------------------- */
+/* .main .a1 .첫막내{clear: both;} */
+/* --------------------a1 end----------------------- */

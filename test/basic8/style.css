@@ -1,0 +1,64 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+.main{background-color: #f0e6d7;
+    padding: 20px; width: 800px; margin: auto;
+    margin-top: 30px;
+}
+.main .a1{background-color: #A6D1E6;
+    padding: 20px;
+}
+.main .a1 .첫손{float: left; width: 50%; height: 200px;}
+.main .a1 .첫손.a11{background-color: #7F5283;
+    position: relative;
+}
+.main .a1 .첫손.a11 .연예인{
+    position: absolute;
+    left: 50%; top: 50%; /* a1으로부터 떨어짐 */
+    transform: translate(-50%,-50%); /* (x값,y값) 내몸을 기준으로 */
+    width: 200px;}
+.main .a1 .첫손.a11 .연예인 img{width: 100%;
+    display: block; /* 이미지 주변의 틈이 사라짐 */
+}
+.main .a1 .첫손.a12{background-color: #3D3C42;
+    position: relative; /* 이걸 적어야 밑에 absolute가 a12를 벗어나지 않음 */
+    overflow: hidden;
+}
+
+.main .a1 .첫손.a12 .크기{position: absolute; left: 0;top: 0;
+    width: 100%; height: 100%; overflow: hidden; /* 영역보다 넘치는 것 지워짐 */
+    transition: 03.s;
+}
+.main .a1 .첫손.a12:hover .크기{
+    transform: scale(1.2) rotate(360deg);
+}
+.main .a1 .첫손.a12 .크기 img{width: 100%;}
+.main .a1 .dir{clear: both;}
+.main .a2{background-color: rgb(0, 0, 0);
+    height: 500px; margin-top: 20px; position: relative;
+}
+.main .a2 .video{
+    position: absolute; /* 이걸 포함하는 위에 position: relative를 넣어야 중앙에옴 */
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px; 
+}
+.main .a2 .video video{width: 100%;
+    display: block;
+}
+.main .a2 .캐릭터{width: 100px;
+position: absolute; right: 5%; top: 5%;
+transform: rotate(18deg);
+}
+.main .a3{background-color: rgb(255, 255, 255);
+    position: relative; margin-top: 20px;
+    height: 400px;
+}
+.main .a3 .일러{width: 300px;
+    position: absolute; left: 50%; top: 50%;
+    transform:  translate(-50%,-50%) scale(0.1);
+    opacity: 0;
+}
+.main .a3:hover .일러{
+    opacity: 1;
+    transition: 0.3s;
+    transform:  translate(-50%,-50%) scale(1);}

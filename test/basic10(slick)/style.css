@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+.main{background-color: rgb(191, 173, 212);
+    width: 1000px; margin: auto;
+}

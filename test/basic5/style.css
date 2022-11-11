@@ -1,0 +1,68 @@
+ /* 여기선 다 글자요소 
+ .all .all3::after{content: ""; display: block;
+clear: both; 해야 오류가 없음*/
+ @charset "UTF-8";
+ *{padding: 0; margin: 0;}
+ .dir{clear: both;}
+ /* 자식은 부모의 넓이에 따라가고 부모는 자식의 높이에 따라간다 */
+.all{background-color: rgb(245, 227, 255);
+     padding: 20px;
+     width: 600px;
+     margin: auto; /* 영역을 가운대 정렬 */ }
+.all .all1{background-color: rgb(191, 224, 172);
+     height: 600px;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210625/pngtree-watercolor-landscape-computer-desktop-wallpaper-image_733301.jpg);
+    transition: 0.3s;
+    background-repeat: no-repeat; /* 배경이미지를 반복없게하기-한장만 보임, 넓비맞춤 */
+    background-size: cover; /* 높이가 모자랄때 */
+}
+.all .all1:hover{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210625/pngtree-blue-watercolor-landscape-computer-desktop-wallpaper-image_733318.jpg);
+}    
+.all .all2{background-color: bisque;
+    margin-top: 20px;
+}
+/* float:left 가로로 정렬하게함 */
+.all .all2 .all21{float:left; background-color: chocolate;
+    height: 200px; width: 31.3333%;
+    margin: 1%;
+    /* margin: 1%; 상하좌우전부 포함
+    margin: 1% 2%; 상하 좌우 각각
+    margin: 1% 2% 3%; 상 좌우 하 각각
+    margin: 1% 2% 3% 4%; 위 오른쪽 아래 왼쪽
+    마진을 오른쪽에만 2%줘라
+    margin: 0% 2% 0% 0% = margin-right:2%
+    */
+}
+.all .all2 .all22{float:left; background-color: coral;
+    height: 200px; width: 31.3333%;
+    margin: 1%;
+}
+.all .all2 .all23{float:left; background-color: cornflowerblue;
+    height: 200px; width: 31.3333%;
+    margin: 1%;
+}
+.all .all3{background-color: rgb(83, 83, 83);
+margin-top: 20px;
+}
+.all .all3::after{content: ""; display: block;
+clear: both; /* 스타일 css에서만 만들수 있는 가상공간 */
+}
+.all .all3 .all31{background-color: #B1AFFF;
+    width: 23.75%; float: left; height: 200px;
+    margin: 1% 0.5% 1% 1%;
+}
+.all .all3 .all32{background-color: #B8E8FC;
+    width: 23.75%; float: left; height: 200px;
+    margin: 1% 0.5% 1% 0.5%;
+}
+.all .all3 .all32 span{color: red; /* 인라인(inline) 요소 */
+}
+.all .all3 .all33{background-color: #C8FFD4;
+    width: 23.75%; float: left; height: 200px;
+    margin: 1% 0.5% 1% 0.5%;
+}
+.all .all3 .all34{background-color: #FDFDBD;
+    width: 23.75%; float: left; height: 200px;
+    margin: 1% 1% 1% 0.5%;
+}

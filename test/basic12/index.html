@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .main{background-color: #251F44;
+            width: 800px; margin: auto;
+        }
+        .블럭요소{background-color: #D3DBFF;}
+        .블럭요소2{background-color: #ff60b2;}
+        .블럭요소2 .인라인요소{background-color: #f390da;
+            width: 500px; /* 아무리 widtr를 줘도 인식하지 못함 인라인요소는 글자의 넓이만 인식 */
+        }
+        .블럭요소2 .인라인요소2{background-color: #f5bee7;
+            display: block; /* 자기혼자 한자리 차지함*/ 
+            text-align: center; /* 블럭요소안에있는 인라인요소의글자를 가운대정렬해라 */
+        }
+        .블럭요소2 .인라인요소3{background-color: #FFE0F7; text-align: center;}
+        .블럭요소2 .인라인요소3:before{content: "b";}
+        .블럭요소2 .인라인요소3:after{content: "a"; display: block;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="블럭요소">블럭요소 (부모- 전체의 넓이를 모두 체움 옆에 아무도 없음)</div>
+        <div class="블럭요소2">
+            <span class="인라인요소">인라인요소 (공간의 개념이 없음 옆에 세울수있음)</span>
+            <span class="인라인요소2">인라인요소2</span>
+            <span class="인라인요소3">인라인요소3</span>
+        </div>
+    </div>
+</body>
+</html>

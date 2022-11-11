@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{background-color: deepskyblue;}
+        .멋쟁이{background-color: yellow; width: 400px; height: 300px;
+           background-image: url(데이지.jpg);
+           background-size: cover;
+           transition: 0.3s;} /* 커서를 올리때 바뀌는 시간-부드러워짐 */
+        /* .멋쟁이:hover 는 이 이미지에 커서를 올리면 이미지가 바뀜 */
+        .멋쟁이:hover{background-image: url(lp.jpg);}
+        .칠칠이{background-color: darkslateblue; 
+            width: 400px; }
+        .예술이{width: 400px; height: 300px; 
+            overflow: hidden; /* 밖으로 안튀어나옴 */}
+        .예술이 img{width: 100%;} /* 위에 정해놓은 크기에 맞춰짐 */
+        .움직임의부모{background-color: coral;  width: 400px; height: 300px;
+            overflow: hidden; /* 밖으로 안튀어나옴 */}
+        .움직임의부모 .move{background-color: mediumpurple; 
+            width: 400px; height: 300px;
+            position: relative; /* 움직이기위한 */
+            left: 400px;
+            transition: 0.3s;} /* 커서를 올리때 바뀌는 시간-부드러워짐 */
+        .움직임의부모:hover .move{
+                left: 0;}
+        .움직임의부모2{background-color: rgb(250, 53, 145);  width: 400px; height: 300px;
+            overflow: hidden; /* 밖으로 안튀어나옴 */}
+        .움직임의부모2 .move2{background-color: rgb(38, 240, 230); 
+            width: 400px; height: 300px;
+            position: relative; /* 움직이기위한 */
+            transition: 0.3s; /* 커서를 올리때 바뀌는 시간-부드러워짐 */
+            top: 300px;}
+        .움직임의부모2:hover .move2{
+            top: 0px; }
+        .움직임의부모3{background-color: brown; width: 400px; height: 300px; 
+        overflow: hidden;}
+        .움직임의부모3 .move3{background-color: burlywood; width: 400px; height: 300px;
+        position: relative;
+        transition: 0.3s;
+        top: -300px;}
+        .움직임의부모3:hover .move3{
+            top: 0; }
+        .움직임의부모4{background-color: dimgray; width: 400px; height: 300px;
+        overflow: hidden;}
+        .움직임의부모4 .move4{background-color: rgb(223, 217, 217); width: 400px; height: 300px;
+        position: relative;
+        left: -400px;
+        transition: 0.3s;}
+        .움직임의부모4:hover .move4{
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="멋쟁이">제목입니다</div> <!-- 한줄복사 alt + shift + ↓ -->
+    <div class="칠칠이">한줄복사 alt + shift + ↓</div>
+    <div class="예술이">
+        <img src="데이지.jpg" alt="검은배경 데이지 이미지">
+    </div>
+    <div class="움직임의부모">
+        <div class="move">촐싹이</div>
+    </div>
+    <div class="움직임의부모2">
+        <div class="move2">촐싹이2</div>
+    </div>
+    <div class="움직임의부모3">
+        <div class="move3">촐싹이3</div>
+    </div>
+    <div class="움직임의부모4">
+        <div class="move4">촐싹이4</div>
+    </div>
+    
+</body>
+</html>
